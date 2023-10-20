@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+ body {
+    font-family: 'Nunito Sans', sans-serif;
+    }
+
 /************************************************
     UTILITIES
  ************************************************/
@@ -19,7 +27,11 @@
  
     @media screen and (max-width: 468px) {
 
-        header {
+        .container {
+            margin: 0 2rem;
+        }
+
+        .container-header {
             background-color: rgb(0, 132, 253);
             justify-content: space-between;
             padding: 1rem 1.7rem;
@@ -28,5 +40,26 @@
 
         .icon {
             font-size: 1.5rem;
+        }
+
+        .features {
+            background-color: white;
+        }
+
+        .demo-application {
+            background-color: rgb(181, 221, 255);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .app-store {
+            background-color: rgb(0, 132, 253);
+            color: white;
+            padding: 0.3rem 2rem;
+            border-radius: 1rem;
+        }
+
+        #img-phone {
+            width: 50%;
         }
  }
