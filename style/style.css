@@ -44,8 +44,6 @@ margin-top: 3rem;
 
     /* FEATURES SECTION */
  
-    @media screen and (max-width: 480px) {
-
         .container {
             margin: 0 2rem;
         }
@@ -65,7 +63,8 @@ margin-top: 3rem;
             background-color: white;
         }
 
-        .box-features {
+        .box-features-big,
+        .box-features-small {
             background-color: rgb(181, 221, 255);
             border-radius: 1rem;
             flex-direction: column;
@@ -157,6 +156,8 @@ margin-top: 3rem;
             margin-bottom: 2rem;
         }
 
+        /* TESTIMONIALS SECTION */
+
         .box-testimonials {
            margin-top: 4rem;
            flex-direction: column;
@@ -212,15 +213,17 @@ margin-top: 3rem;
 
         div.card-testimonials img.card-testimonials,
         div.card-testimonials p,
-        div.card-testimonials span {
+        div.card-testimonials .name {
             margin-top: 1.5rem;
         }
 
-        div.card-testimonials span {
+        .name {
             text-transform: uppercase;
             font-weight: 600;
             margin-bottom: 1rem;
         }
+
+        /* BENEFITS SECTION */
 
         .benefits {
             background-color: rgb(151, 146, 228);
@@ -274,9 +277,12 @@ margin-top: 3rem;
             font-size: 1rem;
         }
 
+        /* ABOUT-US SECTION */
+
         .about-us {
             background-color: white;
             padding-top: 4rem;
+            padding-bottom: 4rem;
         }
 
         div.box-about-us h1 {
@@ -294,6 +300,224 @@ margin-top: 3rem;
         div.box-about-us p {
             margin-bottom: 5rem;
         }
+
+        .img-about-us {
+            width: 12rem;
+            height: 12rem;
+            background-color: white;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        div.img-about-us img {
+            height: 100%;
+            position: relative;
+            right: 0px;
+        }
+
+        div.box-about-us h2 {
+            color: rgb(151, 146, 228);
+            font-size: 1.7rem;
+        }
+
+        div.box-about-us span {
+            background-color: rgb(151, 146, 228);
+            color: white;
+            padding: 0.3rem 2rem;
+            border-radius: 1rem;
+            width: 70%;
+            text-align: center;
+        }
+
+        div.box-about-us h2 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* GET-STARTED SECTION */
+
+        .get-started {
+            background-color: rgb(151, 146, 228);
+            padding: 4rem 0;
+        }
+
+        .box-get-started {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        div.box-get-started h3 {
+            font-size: 1.6rem;
+        }
+
+        div.box-get-started h2 {
+            font-size: 2.8rem;
+            color: rgb(253, 193, 95);
+        }
+
+        div.box-get-started p {
+            font-weight: 100;
+        }
+
+        div.box-get-started span {
+            background-color: white;
+            color: rgb(151, 146, 228);
+            padding: 0.9rem 2rem;
+            border-radius: 2rem;
+            width: 70%;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        div.box-get-started h2,
+        div.box-get-started h3,
+        div.box-get-started p,
+        div.box-get-started span {
+            margin-bottom: 2rem;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: rgb(51, 51, 51);
+            padding: 2rem 0;
+        }
+
+        .box-footer {
+            color: white;
+            text-align: center;
+        }
+
+        div.box-footer p {
+            font-weight: 100;
+            font-size: 0.8rem;
+        }
+
+        div.box-footer a {
+            color: rgb(151, 146, 228);
+        }
+
+        div.box-footer p:nth-child(2n) {
+            padding-top: 3rem;
+        }
+
+
+        {
+            
+        }
+
+    /************************************************
+    SOLUZIONE TABLET RESPONSIVE
+    ************************************************/
+
+    @media screen and (min-width: 576px) {
+        
+        /* FEATURES SECTION */
+
+        .box-features-big {
+            width: calc((100% / 3 * 2) - 1rem);
+            text-align: start;
+            margin-top: 1rem
+        }
+
+        .box-features-small {
+            width: calc((100% / 3 ) - 0.5rem);
+            margin-top: 1rem;
+        }
+
+        .container-features {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        div.box-features-big h1,
+        div.box-features-small h1 {
+            font-size: 1.3rem;
+        }
+
+        div.box-features-small h1 {
+            margin-top: 1rem;
+        }
+
+        div.box-features-small p {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        div.box-features-big p {
+            font-size: 0.65rem;
+        }
+
+        /* PLANNING SECTION */
+
+        div.box-planning h1 {
+            font-size: 3rem;
+            margin-top: 5rem;
+        }
+
+        div.box-planning p {
+            font-size: 0.65rem;
+        }
+
+        .box-planning {
+            align-items: flex-start;
+        }
+
+        .app-development {
+            align-items: center;
+        }
+
+        /* TESTIMONIALS SECTION */
+
+        .card-testimonials {
+            flex-direction: row;
+        }
+
+        div.box-testimonials p {
+            font-size: 0.7rem;
+        }
+
+        div.card-testimonials p {
+            font-size: 0.7rem;
+        }
+
+        /* BENEFITS SECTION */
+
+        .card-benefits {
+            width: calc(100% / 2);
+            margin: 1rem;
+        }
+
+        .container-benefits {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+
+        
+
+
+
+             
+     }
+
+
+
+        
+
+
+
+
+
 
 
 
